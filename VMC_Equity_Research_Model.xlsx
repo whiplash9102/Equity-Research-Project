@@ -1,0 +1,90 @@
+# Peer Analysis / Comparable Company Analysis - Sheet 9
+
+## Company Overview Table
+| Ticker | Company Name | Exchange | Market Cap | Industry | Key Products/Services |
+|--------|--------------|----------|------------|----------|----------------------|
+| VMC | Vulcan Materials Company | NYSE | =VLOOKUP("VMC",MarketData!A:E,5,FALSE) | Building Materials | Aggregates, Asphalt, Concrete |
+| MLM | Martin Marietta Materials | NYSE | =VLOOKUP("MLM",MarketData!A:E,5,FALSE) | Building Materials | Aggregates, Heavy Building Materials |
+| KNF | Knife River Corporation | NYSE | =VLOOKUP("KNF",MarketData!A:E,5,FALSE) | Building Materials | Aggregates, Asphalt, Concrete |
+| CRH | CRH plc | LSE | =VLOOKUP("CRH",MarketData!A:E,5,FALSE) | Building Materials | Building Materials, Aggregates |
+| CX | Cemex, S.A.B. de C.V. | NYSE | =VLOOKUP("CX",MarketData!A:E,5,FALSE) | Building Materials | Cement, Ready-Mix Concrete |
+| EXP | Eagle Materials Inc. | NYSE | =VLOOKUP("EXP",MarketData!A:E,5,FALSE) | Building Materials | Cement, Aggregates, Gypsum |
+
+## Market Data & Trading Comps
+| Ticker | Current Price | Market Cap ($M) | P/E | P/B | EV/EBITDA | Dividend Yield | Beta |
+|--------|---------------|-----------------|-----|-----|-----------|----------------|------|
+| VMC | =VLOOKUP("VMC",MarketData!A:J,10,FALSE) | =VLOOKUP("VMC",MarketData!A:E,5,FALSE) | =VLOOKUP("VMC",MarketData!A:P,16,FALSE) | =VLOOKUP("VMC",MarketData!A:Q,17,FALSE) | =VLOOKUP("VMC",MarketData!A:R,18,FALSE) | =VLOOKUP("VMC",MarketData!A:S,19,FALSE) | =VLOOKUP("VMC",MarketData!A:T,20,FALSE) |
+| MLM | =VLOOKUP("MLM",MarketData!A:J,10,FALSE) | =VLOOKUP("MLM",MarketData!A:E,5,FALSE) | =VLOOKUP("MLM",MarketData!A:P,16,FALSE) | =VLOOKUP("MLM",MarketData!A:Q,17,FALSE) | =VLOOKUP("MLM",MarketData!A:R,18,FALSE) | =VLOOKUP("MLM",MarketData!A:S,19,FALSE) | =VLOOKUP("MLM",MarketData!A:T,20,FALSE) |
+| KNF | =VLOOKUP("KNF",MarketData!A:J,10,FALSE) | =VLOOKUP("KNF",MarketData!A:E,5,FALSE) | =VLOOKUP("KNF",MarketData!A:P,16,FALSE) | =VLOOKUP("KNF",MarketData!A:Q,17,FALSE) | =VLOOKUP("KNF",MarketData!A:R,18,FALSE) | =VLOOKUP("KNF",MarketData!A:S,19,FALSE) | =VLOOKUP("KNF",MarketData!A:T,20,FALSE) |
+| CRH | =VLOOKUP("CRH",MarketData!A:J,10,FALSE) | =VLOOKUP("CRH",MarketData!A:E,5,FALSE) | =VLOOKUP("CRH",MarketData!A:P,16,FALSE) | =VLOOKUP("CRH",MarketData!A:Q,17,FALSE) | =VLOOKUP("CRH",MarketData!A:R,18,FALSE) | =VLOOKUP("CRH",MarketData!A:S,19,FALSE) | =VLOOKUP("CRH",MarketData!A:T,20,FALSE) |
+| CX | =VLOOKUP("CX",MarketData!A:J,10,FALSE) | =VLOOKUP("CX",MarketData!A:E,5,FALSE) | =VLOOKUP("CX",MarketData!A:P,16,FALSE) | =VLOOKUP("CX",MarketData!A:Q,17,FALSE) | =VLOOKUP("CX",MarketData!A:R,18,FALSE) | =VLOOKUP("CX",MarketData!A:S,19,FALSE) | =VLOOKUP("CX",MarketData!A:T,20,FALSE) |
+| EXP | =VLOOKUP("EXP",MarketData!A:J,10,FALSE) | =VLOOKUP("EXP",MarketData!A:E,5,FALSE) | =VLOOKUP("EXP",MarketData!A:P,16,FALSE) | =VLOOKUP("EXP",MarketData!A:Q,17,FALSE) | =VLOOKUP("EXP",MarketData!A:R,18,FALSE) | =VLOOKUP("EXP",MarketData!A:S,19,FALSE) | =VLOOKUP("EXP",MarketData!A:T,20,FALSE) |
+
+## Operating & Financial Metrics
+| Ticker | Revenue ($M) | EBITDA ($M) | Net Income ($M) | Debt ($M) | Interest Expense ($M) | Tax Rate | ROIC | ROE |
+|--------|--------------|-------------|-----------------|-----------|----------------------|----------|------|-----|
+| VMC | =VLOOKUP("VMC",Financials!A:G,7,FALSE) | =VLOOKUP("VMC",Financials!A:H,8,FALSE) | =VLOOKUP("VMC",Financials!A:I,9,FALSE) | =VLOOKUP("VMC",Financials!A:J,10,FALSE) | =VLOOKUP("VMC",Financials!A:K,11,FALSE) | =VLOOKUP("VMC",Financials!A:L,12,FALSE) | =VLOOKUP("VMC",Financials!A:M,13,FALSE) | =VLOOKUP("VMC",Financials!A:N,14,FALSE) |
+| MLM | =VLOOKUP("MLM",Financials!A:G,7,FALSE) | =VLOOKUP("MLM",Financials!A:H,8,FALSE) | =VLOOKUP("MLM",Financials!A:I,9,FALSE) | =VLOOKUP("MLM",Financials!A:J,10,FALSE) | =VLOOKUP("MLM",Financials!A:K,11,FALSE) | =VLOOKUP("MLM",Financials!A:L,12,FALSE) | =VLOOKUP("MLM",Financials!A:M,13,FALSE) | =VLOOKUP("MLM",Financials!A:N,14,FALSE) |
+| KNF | =VLOOKUP("KNF",Financials!A:G,7,FALSE) | =VLOOKUP("KNF",Financials!A:H,8,FALSE) | =VLOOKUP("KNF",Financials!A:I,9,FALSE) | =VLOOKUP("KNF",Financials!A:J,10,FALSE) | =VLOOKUP("KNF",Financials!A:K,11,FALSE) | =VLOOKUP("KNF",Financials!A:L,12,FALSE) | =VLOOKUP("KNF",Financials!A:M,13,FALSE) | =VLOOKUP("KNF",Financials!A:N,14,FALSE) |
+| CRH | =VLOOKUP("CRH",Financials!A:G,7,FALSE) | =VLOOKUP("CRH",Financials!A:H,8,FALSE) | =VLOOKUP("CRH",Financials!A:I,9,FALSE) | =VLOOKUP("CRH",Financials!A:J,10,FALSE) | =VLOOKUP("CRH",Financials!A:K,11,FALSE) | =VLOOKUP("CRH",Financials!A:L,12,FALSE) | =VLOOKUP("CRH",Financials!A:M,13,FALSE) | =VLOOKUP("CRH",Financials!A:N,14,FALSE) |
+| CX | =VLOOKUP("CX",Financials!A:G,7,FALSE) | =VLOOKUP("CX",Financials!A:H,8,FALSE) | =VLOOKUP("CX",Financials!A:I,9,FALSE) | =VLOOKUP("CX",Financials!A:J,10,FALSE) | =VLOOKUP("CX",Financials!A:K,11,FALSE) | =VLOOKUP("CX",Financials!A:L,12,FALSE) | =VLOOKUP("CX",Financials!A:M,13,FALSE) | =VLOOKUP("CX",Financials!A:N,14,FALSE) |
+| EXP | =VLOOKUP("EXP",Financials!A:G,7,FALSE) | =VLOOKUP("EXP",Financials!A:H,8,FALSE) | =VLOOKUP("EXP",Financials!A:I,9,FALSE) | =VLOOKUP("EXP",Financials!A:J,10,FALSE) | =VLOOKUP("EXP",Financials!A:K,11,FALSE) | =VLOOKUP("EXP",Financials!A:L,12,FALSE) | =VLOOKUP("EXP",Financials!A:M,13,FALSE) | =VLOOKUP("EXP",Financials!A:N,14,FALSE) |
+
+## Valuation Multiples Comparison
+| Ticker | P/E | P/B | EV/EBITDA | EV/Revenue | EV/FCF | PEG Ratio |
+|--------|-----|-----|-----------|------------|--------|-----------|
+| VMC | =VLOOKUP("VMC",MarketData!A:P,16,FALSE) | =VLOOKUP("VMC",MarketData!A:Q,17,FALSE) | =VLOOKUP("VMC",MarketData!A:R,18,FALSE) | =VLOOKUP("VMC",MarketData!A:S,19,FALSE) | =VLOOKUP("VMC",MarketData!A:T,20,FALSE) | =VLOOKUP("VMC",MarketData!A:U,21,FALSE) |
+| MLM | =VLOOKUP("MLM",MarketData!A:P,16,FALSE) | =VLOOKUP("MLM",MarketData!A:Q,17,FALSE) | =VLOOKUP("MLM",MarketData!A:R,18,FALSE) | =VLOOKUP("MLM",MarketData!A:S,19,FALSE) | =VLOOKUP("MLM",MarketData!A:T,20,FALSE) | =VLOOKUP("MLM",MarketData!A:U,21,FALSE) |
+| KNF | =VLOOKUP("KNF",MarketData!A:P,16,FALSE) | =VLOOKUP("KNF",MarketData!A:Q,17,FALSE) | =VLOOKUP("KNF",MarketData!A:R,18,FALSE) | =VLOOKUP("KNF",MarketData!A:S,19,FALSE) | =VLOOKUP("KNF",MarketData!A:T,20,FALSE) | =VLOOKUP("KNF",MarketData!A:U,21,FALSE) |
+| CRH | =VLOOKUP("CRH",MarketData!A:P,16,FALSE) | =VLOOKUP("CRH",MarketData!A:Q,17,FALSE) | =VLOOKUP("CRH",MarketData!A:R,18,FALSE) | =VLOOKUP("CRH",MarketData!A:S,19,FALSE) | =VLOOKUP("CRH",MarketData!A:T,20,FALSE) | =VLOOKUP("CRH",MarketData!A:U,21,FALSE) |
+| CX | =VLOOKUP("CX",MarketData!A:P,16,FALSE) | =VLOOKUP("CX",MarketData!A:Q,17,FALSE) | =VLOOKUP("CX",MarketData!A:R,18,FALSE) | =VLOOKUP("CX",MarketData!A:S,19,FALSE) | =VLOOKUP("CX",MarketData!A:T,20,FALSE) | =VLOOKUP("CX",MarketData!A:U,21,FALSE) |
+| EXP | =VLOOKUP("EXP",MarketData!A:P,16,FALSE) | =VLOOKUP("EXP",MarketData!A:Q,17,FALSE) | =VLOOKUP("EXP",MarketData!A:R,18,FALSE) | =VLOOKUP("EXP",MarketData!A:S,19,FALSE) | =VLOOKUP("EXP",MarketData!A:T,20,FALSE) | =VLOOKUP("EXP",MarketData!A:U,21,FALSE) |
+
+## Ranking Table
+| Metric | VMC Rank | MLM Rank | KNF Rank | CRH Rank | CX Rank | EXP Rank | Best | Worst |
+|--------|----------|----------|----------|----------|---------|----------|------|-------|
+| Market Cap | =RANK(VLOOKUP("VMC",MarketData!A:E,5,FALSE),{VLOOKUP("VMC",MarketData!A:E,5,FALSE),VLOOKUP("MLM",MarketData!A:E,5,FALSE),VLOOKUP("KNF",MarketData!A:E,5,FALSE),VLOOKUP("CRH",MarketData!A:E,5,FALSE),VLOOKUP("CX",MarketData!A:E,5,FALSE),VLOOKUP("EXP",MarketData!A:E,5,FALSE)},0) | ... | ... | ... | ... | ... | =INDEX({VMC,MLM,KNF,CRH,CX,EXP},MATCH(MIN({VLOOKUP("VMC",MarketData!A:E,5,FALSE),VLOOKUP("MLM",MarketData!A:E,5,FALSE),VLOOKUP("KNF",MarketData!A:E,5,FALSE),VLOOKUP("CRH",MarketData!A:E,5,FALSE),VLOOKUP("CX",MarketData!A:E,5,FALSE),VLOOKUP("EXP",MarketData!A:E,5,FALSE)}),{VLOOKUP("VMC",MarketData!A:E,5,FALSE),VLOOKUP("MLM",MarketData!A:E,5,FALSE),VLOOKUP("KNF",MarketData!A:E,5,FALSE),VLOOKUP("CRH",MarketData!A:E,5,FALSE),VLOOKUP("CX",MarketData!A:E,5,FALSE),VLOOKUP("EXP",MarketData!A:E,5,FALSE)},0)) | =INDEX({VMC,MLM,KNF,CRH,CX,EXP},MATCH(MAX({VLOOKUP("VMC",MarketData!A:E,5,FALSE),VLOOKUP("MLM",MarketData!A:E,5,FALSE),VLOOKUP("KNF",MarketData!A:E,5,FALSE),VLOOKUP("CRH",MarketData!A:E,5,FALSE),VLOOKUP("CX",MarketData!A:E,5,FALSE),VLOOKUP("EXP",MarketData!A:E,5,FALSE)}),{VLOOKUP("VMC",MarketData!A:E,5,FALSE),VLOOKUP("MLM",MarketData!A:E,5,FALSE),VLOOKUP("KNF",MarketData!A:E,5,FALSE),VLOOKUP("CRH",MarketData!A:E,5,FALSE),VLOOKUP("CX",MarketData!A:E,5,FALSE),VLOOKUP("EXP",MarketData!A:E,5,FALSE)},0)) |
+| P/E | ... | ... | ... | ... | ... | ... | ... | ... |
+| P/B | ... | ... | ... | ... | ... | ... | ... | ... |
+| EV/EBITDA | ... | ... | ... | ... | ... | ... | ... | ... |
+| ROIC | ... | ... | ... | ... | ... | ... | ... | ... |
+| ROE | ... | ... | ... | ... | ... | ... | ... | ... |
+
+## Analyst Commentary
+**VMC Relative Position Analysis:**
+- VMC is positioned as the [Xth] largest player by market cap in the peer group
+- Trading at [X]x P/E vs. peer average of [X]x, indicating [premium/discount] valuation
+- ROIC of [X]% ranks [X] among peers, suggesting [strong/average/weak] capital efficiency
+- EV/EBITDA multiple of [X]x vs. peer average of [X]x indicates [premium/discount] relative valuation
+- Dividend yield of [X]% is [above/below] the peer group average of [X]%, suggesting [attractive/competitive] income characteristics
+
+**Key Observations:**
+- VMC's market position: [Leader/mid-tier/specialist] in aggregates market
+- Valuation relative to peers: [Premium/discount] across most multiples
+- Financial strength: [Strong/average/weak] balance sheet metrics
+- Growth prospects: [Favorable/competitive] vs. peer group
+- Risk factors: [List key relative risks vs. peers]
+
+**Recommendation:**
+Based on the comparable analysis, VMC appears to be [undervalued/overvalued/fairly valued] relative to its peer group, with a [Buy/Hold/Sell] recommendation based on [key drivers].
+
+## Source Notes
+- Market data sourced from Refinitiv Eikon (API Key: 90c2abfb7de04532a6afb51300174d596f140a56)
+- Financial data as of [most recent quarter/year]
+- All multiples calculated using [TTM/LTM] figures
+- Currency conversions at [exchange rate source]
+- Market cap in USD millions
+
+## Data Tabs Structure
+1. MarketData - Raw market data for all companies
+2. Financials - Income statement, balance sheet, cash flow data
+3. Charts - Visual representations of key metrics
+4. Calculations - Supporting calculations and ratios
+
+## Formatting Notes
+- All formulas should remain visible in-cell
+- Use institutional investment banking formatting
+- Currency in USD millions
+- Round to 2 decimal places for multiples, 0 for market cap/revenue
+- Highlight VMC (Target) in blue, peers in gray
+- Use conditional formatting for rankings

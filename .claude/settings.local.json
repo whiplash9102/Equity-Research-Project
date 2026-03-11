@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/\" | grep -E \"\\\\.\\(xlsx|xls|csv|pdf|docx\\)$\")",
+      "Bash(cd \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/\" && unzip -l ~$VMC_Equity_Research_Model.xlsx | head -20)",
+      "Bash(cd \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/\" && unzip -l \"~$VMC_Equity_Research_Model.xlsx\" | head -20)",
+      "Skill(claude-api)",
+      "Bash(ls -la \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/\" | grep \"VMC_Sheet9\")",
+      "Bash(find \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" -maxdepth 1 -type f -name \"*.py\")",
+      "Bash(find \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" -maxdepth 2 -type f \\\\\\( -name \"*.py\" -o -name \"*.csv\" -o -name \"*.txt\" -o -name \"*.md\" \\\\\\) | grep -v \".venv\")",
+      "Bash(wc -l \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/update_vmc_workbook_sheet4_esg.py\")",
+      "Bash(find \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" -maxdepth 2 -type f \\\\\\( -name \"requirements*.txt\" -o -name \"pyproject.toml\" -o -name \"setup.py\" -o -name \"config*.py\" -o -name \"Pipfile\" -o -name \"poetry.lock\" \\\\\\) | grep -v \".venv\")",
+      "Bash(ls -la \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/.venv\" 2>/dev/null | head -20)",
+      "Bash(ls -la \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" | grep -v \"^d\" | grep -v \"\\\\.pyc\")",
+      "Bash(find \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" -maxdepth 1 -type f ! -name \"*.py\" ! -name \"*.xlsx\" ! -name \"*.pdf\" ! -name \"~$*\")",
+      "Bash(python3 -c \"import openpyxl; wb = openpyxl.load_workbook\\('/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/VMC_Equity_Research_Model.xlsx', read_only=True\\); print\\('Sheet names:', wb.sheetnames\\); print\\('Sheet counts:', len\\(wb.sheetnames\\)\\)\" 2>&1)",
+      "Bash(ls -la \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/.cache\")",
+      "Bash(ls -la \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/.cache/py-yfinance\")",
+      "Bash(pip list:*)",
+      "Bash(find \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" -type d -name \".venv\" -prune -o -type d -name \".cache\" -prune -o -type d -name \".claude\" -prune -o -type f -name \"*.py\" -print)",
+      "Bash(head -100 \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/update_vmc_workbook_sheet4_esg.py\")",
+      "Bash(tail -200 \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/update_vmc_workbook_sheet4_esg.py\")",
+      "Bash(cd \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" && python3 sheet9_orchestrator.py)",
+      "Bash(cd \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" && python3 -c \"import sys; print\\(sys.path\\)\")",
+      "Bash(cd \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" && python3 -c \"import sys; sys.path.append\\('.'\\); from data_collection import FinancialDataCollector; print\\('Data collection module loaded successfully'\\)\")",
+      "Bash(ls -la \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research/\")",
+      "Bash(cd \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" && python3 -c \"\nimport openpyxl\nwb = openpyxl.load_workbook\\('VMC_Sheet9_Financial_Data.xlsx'\\)\nprint\\(f'Workbook loaded successfully'\\)\nprint\\(f'Sheet names: {wb.sheetnames}'\\)\nprint\\(f'Sheet 9 size: {wb[\\\\\"Sheet9_Financial_Data\\\\\"].max_row} rows x {wb[\\\\\"Sheet9_Financial_Data\\\\\"].max_column} columns'\\)\n\")",
+      "Bash(cd \"/Users/phamthanh/Documents/ESSCA | MSc Finance & Data Analyst/15. Equity Research\" && python3 -c \"\nimport openpyxl\nwb = openpyxl.load_workbook\\('VMC_Sheet9_Financial_Data.xlsx'\\)\nprint\\('=== SHEET 9 STRUCTURE ==='\\)\nprint\\(f'Workbook contains {len\\(wb.sheetnames\\)} sheets:'\\)\nfor sheet in wb.sheetnames:\n    ws = wb[sheet]\n    print\\(f'  - {sheet}: {ws.max_row} rows x {ws.max_column} columns'\\)\n\nprint\\('\\\\n=== SAMPLE DATA ==='\\)\nws = wb['Sheet9_Financial_Data']\nprint\\('Sheet 9 first few rows:'\\)\nfor row in ws.iter_rows\\(min_row=1, max_row=10, max_col=5\\):\n    print\\('  ' + ' | '.join\\(str\\(cell.value\\) if cell.value else '' for cell in row\\)\\)\n\")"
+    ]
+  }
+}
